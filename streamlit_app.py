@@ -1,15 +1,36 @@
 import streamlit as st
 
+def _max_width_():
+    max_width_str = f"max-width: 1400px;"
+    st.markdown(
+        f"""
+    <style>
+    .reportview-container .main .block-container{{
+        {max_width_str}
+    }}
+    </style>    
+    """,
+        unsafe_allow_html=True,
+    )
+
+
+# User interface settings
+st.set_page_config(
+    page_title="FlowApp",
+    page_icon="🔀",
+    layout="wide"
+)
+_max_width_()
+# Elements of the interface
 c0, c1 = st.columns([2, 4])
 
 with c0:
-    st.title("Name of our app")
-    st.write("This is some text. To be replaced")
+    st.title("FlowApp")
     st.markdown("")
     st.subheader("📌 User input")
 
     with st.form(key="my_form_input"):
-        c2, c3 = st.columns([1, 5])
+        c2, c3 = st.columns([1.5, 0.5])
         with c2:
             # Collect models choice
             st.markdown("💾 **-- Select the model --**")
