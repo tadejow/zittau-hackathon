@@ -47,14 +47,129 @@ with c0:
                     label="How far is the source of water from the city?",
                     value=(0, 1000)
                 )
+                question_1 = st.selectbox(
+                    label="Q1: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_2 = st.selectbox(
+                    label="Q2: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_3 = st.selectbox(
+                    label="Q3: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_4 = st.selectbox(
+                    label="Q4: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
                 input('')
             if current_task == "Drinkable water pollution":
+                question_1 = st.selectbox(
+                    label="Q1: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_2 = st.selectbox(
+                    label="Q2: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_3 = st.selectbox(
+                    label="Q3: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_4 = st.selectbox(
+                    label="Q4: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
                 input('')
             if current_task == "Why the river is shaped as it is":
+                question_1 = st.selectbox(
+                    label="Q1: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_2 = st.selectbox(
+                    label="Q2: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_3 = st.selectbox(
+                    label="Q3: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_4 = st.selectbox(
+                    label="Q4: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
                 input('')
             if current_task == "Breaking the flow of the river":
+                distance = st.slider(
+                    label="How far is the source of water from the city?",
+                    value=(0, 1000)
+                )
+                question_1 = st.selectbox(
+                    label="Q1: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_2 = st.selectbox(
+                    label="Q2: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_3 = st.selectbox(
+                    label="Q3: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
+                question_4 = st.selectbox(
+                    label="Q4: ",
+                    options=("A1",
+                             "A2",
+                             "A3",
+                             "A4")
+                )
                 input('')
-
             submit = st.form_submit_button("✅ Submit your input")
 
 with c1:
