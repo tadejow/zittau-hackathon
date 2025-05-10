@@ -34,9 +34,8 @@ with c0:
         c2, c3 = st.columns([1.5, 0.5])
         with c2:
             # Get the current task to be displayed
-            st.markdown("💾 **-- Select the task --**")
             current_task = st.selectbox(
-                label="",
+                label="💾 **-- Select the task --**",
                 options=("Flood Alert System",
                          "Drinkable water pollution",
                          "Why the river is shaped as it is?",
@@ -50,7 +49,7 @@ with c0:
                 input('')
             if current_task == "Breaking the flow of the river":
                 input('')
-            
+
             st.form_submit_button()
 
 with c1:
