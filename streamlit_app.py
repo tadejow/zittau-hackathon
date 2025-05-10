@@ -75,7 +75,6 @@ with c0:
                              "A3",
                              "A4")
                 )
-                input('')
             if current_task == "Drinkable water pollution":
                 question_1 = st.selectbox(
                     label="Q1: ",
@@ -105,7 +104,6 @@ with c0:
                              "A3",
                              "A4")
                 )
-                input('')
             if current_task == "Why the river is shaped as it is":
                 question_1 = st.selectbox(
                     label="Q1: ",
@@ -135,7 +133,6 @@ with c0:
                              "A3",
                              "A4")
                 )
-                input('')
             if current_task == "Breaking the flow of the river":
                 distance = st.slider(
                     label="How far is the source of water from the city?",
@@ -169,7 +166,6 @@ with c0:
                              "A3",
                              "A4")
                 )
-                input('')
             submit = st.form_submit_button("✅ Submit your input")
 
     if "load_state" not in st.session_state:
