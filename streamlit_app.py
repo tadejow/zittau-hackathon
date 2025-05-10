@@ -41,7 +41,7 @@ with c0:
                          "Why the river is shaped as it is?",
                          "Breaking the flow of the river")
             )
-            if current_task == "Flood Alert System":
+            if current_task == "1 station / First Drop / Brücke über die Mandau":
                 distance = st.slider(
                     label="How far is the source of water from the city?",
                     value=(0, 1000)
@@ -167,7 +167,7 @@ with c0:
                 )
             submit = st.form_submit_button("✅ Submit your input")
 
-if current_task == "Flood Alert System":
+if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         with st.expander("ℹ️ - About this app", expanded=False):
             st.markdown(
