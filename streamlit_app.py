@@ -1,3 +1,4 @@
+import numpy as np
 import streamlit as st
 
 
@@ -42,6 +43,10 @@ with c0:
                          "Breaking the flow of the river")
             )
             if current_task == "Flood Alert System":
+                distance = st.slider(
+                    label="How far is the source of water from the city?",
+                    value=np.arange(0, 1000)
+                )
                 input('')
             if current_task == "Drinkable water pollution":
                 input('')
