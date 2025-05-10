@@ -50,7 +50,7 @@ with c0:
             if current_task == "Breaking the flow of the river":
                 input('')
 
-            st.form_submit_button()
+            submit = st.form_submit_button("✅ Submit your input")
 
 with c1:
     with st.expander("ℹ️ - About this app", expanded=False):
