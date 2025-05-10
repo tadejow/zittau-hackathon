@@ -45,7 +45,7 @@ with c0:
             if current_task == "Flood Alert System":
                 distance = st.slider(
                     label="How far is the source of water from the city?",
-                    value=np.arange(0, 1000, 1)
+                    value=(0, 1000)
                 )
                 input('')
             if current_task == "Drinkable water pollution":
