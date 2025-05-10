@@ -36,7 +36,7 @@ with c0:
             # Get the current task to be displayed
             current_task = st.selectbox(
                 label="💾 **-- Select the station --**",
-                options=("Flood Alert System",
+                options=("1 station / First Drop / Brücke über die Mandau",
                          "Drinkable water pollution",
                          "Why the river is shaped as it is?",
                          "Breaking the flow of the river")
@@ -190,7 +190,8 @@ if current_task == "Flood Alert System":
                 h1s tags or even metadata!. """
             )
             st.markdown("")
-
+        st.markdown("You are now standing on the Brücke über die Mandau and looking in the direction of Rumburk, where our story begins... Over there, the Mandau winds its way through three countries: the Czech Republic, Germany, and Poland. A peaceful stream at first glance… but don’t be fooled. This river has seen things. Big things.")
+        st.markdown("")
         st.image(
-            'burgers_simulation.gif'
+            'burgers_simulation_with_source.gif'
         )
