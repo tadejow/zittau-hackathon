@@ -35,13 +35,23 @@ with c0:
         with c2:
             # Get the current task to be displayed
             st.markdown("💾 **-- Select the task --**")
-            tasks = st.selectbox(
+            current_task = st.selectbox(
                 label="",
                 options=("Flood Alert System",
                          "Drinkable water pollution",
-                         "Why the river is shaped as it is?")
+                         "Why the river is shaped as it is?",
+                         "Breaking the flow of the river")
             )
-            #
+            if current_task == "Flood Alert System":
+                input('')
+            if current_task == "Drinkable water pollution":
+                input('')
+            if current_task == "Why the river is shaped as it is":
+                input('')
+            if current_task == "Breaking the flow of the river":
+                input('')
+            
+            st.form_submit_button()
 
 with c1:
     with st.expander("ℹ️ - About this app", expanded=False):
