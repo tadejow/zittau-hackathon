@@ -172,6 +172,12 @@ with c0:
                 input('')
             submit = st.form_submit_button("✅ Submit your input")
 
+if "load_state" not in st.session_state:
+    st.session_state.load_state = False
+
+if not st.session_state.load_state and not submit:
+    st.stop()
+
 with c1:
     with st.expander("ℹ️ - About this app", expanded=False):
         st.markdown(
