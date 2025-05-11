@@ -420,7 +420,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
         )
 
         # Placeholder for the visualization
-        st.image("drought_simulation_placeholder.gif")
+        # st.image("drought_simulation_placeholder.gif")
 
         st.markdown("---")
 
