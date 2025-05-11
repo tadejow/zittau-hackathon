@@ -112,6 +112,8 @@ with c0:
                     st.session_state.score += 1
             st.session_state.scored = True
 
+        submit = st.form_submit_button("✅ Submit your input")
+
 if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         st.title(current_task)
