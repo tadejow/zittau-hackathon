@@ -49,9 +49,9 @@ with c0:
                          )
             )
             if current_task == "1 station / First Drop / Brücke über die Mandau":
-                distance = st.slider(
+                distance = st.select_slider(
                     label="How far is the source of water from the city?",
-                    value=(0, 1000)
+                    options=(10, 20, 30)
                 )
                 question_1 = st.selectbox(
                     label="Q1: In how many countries does the Mandau river flow?",
@@ -211,7 +211,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
             """
         )
 
-        st.image('burgers_simulation_with_source.gif')
+        st.image(f'burgers_simulation_with_source_{distance}.gif')
 
         st.markdown(
             """
