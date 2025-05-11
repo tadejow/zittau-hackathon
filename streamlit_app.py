@@ -353,7 +353,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image("serpent_simulation_placeholder.gif")
+        # st.image("serpent_simulation_placeholder.gif")
 
         st.markdown("---")
 
@@ -455,7 +455,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
         )
 
         # Placeholder for the visualization
-        st.image("drought_simulation_placeholder.gif")
+        # st.image("drought_simulation_placeholder.gif")
 
         st.markdown("---")
 
