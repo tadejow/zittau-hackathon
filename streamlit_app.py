@@ -37,7 +37,7 @@ with c0:
             current_task = st.selectbox(
                 label="💾 **-- Select the station --**",
                 options=("1 station / First Drop / Brücke über die Mandau",
-                         "Drinkable water pollution",
+                         "2 station /The Bleaching Fields / Mandau-Holzbrücke",
                          "Why the river is shaped as it is?",
                          "Breaking the flow of the river")
             )
@@ -74,7 +74,7 @@ with c0:
                              "A3",
                              "A4")
                 )
-            if current_task == "Drinkable water pollution":
+            if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
                 question_1 = st.selectbox(
                     label="Q1: ",
                     options=("A1",
