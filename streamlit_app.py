@@ -37,7 +37,7 @@ with c0:
             current_task = st.selectbox(
                 label="💾 **-- Select the station --**",
                 options=("1 station / First Drop / Brücke über die Mandau",
-                         "2 station /The Bleaching Fields / Mandau-Holzbrücke",
+                         "2 station / The Bleaching Fields / Mandau-Holzbrücke",
                          "3 station / The Serpent’s Bend / German Name",
                          "4 point / The Hidden Vein / German Name",
                          "5 station / Final Checkpoint / German Name"
