@@ -41,6 +41,7 @@ with c0:
         # Station selector stored in session_state
         if 'current_task' not in st.session_state:
             st.session_state.current_task = "1 station / First Drop / Brücke über die Mandau"
+
         current_task = st.selectbox(
             label="💾 **-- Select the station --**",
             options=[
@@ -55,7 +56,8 @@ with c0:
 
         # Quiz questions per station
         if current_task == "1 station / First Drop / Brücke über die Mandau":
-            distance = st.slider("How far is the source of water from the city?", (0, 1000))
+            distance = st.select_slider("How far is the source of water from the city?",
+                                        [50, 100, 200, 500])
             q1 = st.selectbox("Q1: In how many countries does the Mandau river flow?",
                              ["One", "Two", "Three", "Four"])
             q2 = st.selectbox("Q2: What happened in 1880 along the Mandau?",
@@ -92,7 +94,6 @@ with c0:
                               "Go with the flow", "Turn back"])
 
         submit = st.form_submit_button("✅ Submit your input")
-
         # Scoring logic only once
         if submit and not st.session_state.scored:
             answers = [(q1, q2)]  # placeholder to unpack below
@@ -111,8 +112,6 @@ with c0:
                 if ans == correct_map[current_task][idx]:
                     st.session_state.score += 1
             st.session_state.scored = True
-
-        submit = st.form_submit_button("✅ Submit your input")
 
 if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
