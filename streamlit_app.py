@@ -161,6 +161,8 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         st.title(current_task)
 
+        st.image("./station_2_img.png")
+
         st.markdown(
             """
             *You are now standing on the **Brücke über die Mandau**, looking in the direction of **Rumburk**, where our story begins...*
@@ -236,7 +238,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
 
 if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
     with c1:
-        
+
         st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
         st.markdown("---")
 
