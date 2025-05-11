@@ -119,8 +119,8 @@ ani = animation.ArtistAnimation(fig, ims, interval=50, blit=True, repeat_delay=1
 
 # Save or show animation
 # To save as GIF (requires imagemagick or pillow):
-# ani.save('river_flow_animation.gif', writer='imagemagick', fps=15)
-# print("Animation saved as river_flow_animation.gif")
-plt.show()
 
+ani.save('river_flow_animation_triangle.gif', writer='imagemagick', fps=15)
+print("Animation saved as river_flow_animation.gif")
+plt.show()
 print("Program finished.")

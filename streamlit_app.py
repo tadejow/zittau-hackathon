@@ -88,6 +88,10 @@ with c0:
                 )
 
             if current_task == "3 station / The Serpent’s Bend / German Name":
+                obstacle = st.selectbox(
+                    "Select the obstacle type",
+                    options=("rectangle", "square", "triangle")
+                )
                 question_1 = st.selectbox(
                     label="Q1: Why did many cities form near rivers?",
                     options=(
@@ -358,7 +362,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        # st.image("serpent_simulation_placeholder.gif")
+        st.image(f"serpent_simulation_{obstacle}.gif")
 
         st.markdown("---")
 
