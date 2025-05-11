@@ -460,15 +460,14 @@ if current_task == "4 station / The Hidden Vein / German Name":
         )
 
         st.markdown(
-            """
-            *(Interactive simulation here:)*  
+            """  
             **Set the amount of rainfall** and see the effects on  
             **water level** and **underground conditions**.
             """
         )
 
         # Placeholder for the visualization
-        # st.image("drought_simulation_placeholder.gif")
+        st.image("interactgive_heatmap.png")
 
         st.markdown("---")
 
