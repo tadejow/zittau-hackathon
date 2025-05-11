@@ -236,9 +236,11 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
 
 if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
     with c1:
+        
         st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
-
         st.markdown("---")
+
+        st.image("./station_2_img.png")
 
         st.markdown(
             """
