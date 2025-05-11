@@ -192,7 +192,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
 
 if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
     with c1:
-        st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
+        st.title(current_task)
 
         st.markdown("---")
 
@@ -255,7 +255,7 @@ if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
 
 if current_task == "3 station / The Serpent’s Bend / German Name":
     with c1:
-        st.title("3️⃣ Station: The Serpent’s Bend")
+        st.title(current_task)
 
         st.markdown("---")
 
@@ -318,7 +318,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image("serpent_simulation_placeholder.gif")
+        # st.image("serpent_simulation_placeholder.gif")
 
         st.markdown("---")
 
@@ -335,7 +335,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
 
 if current_task == "4 station / The Hidden Vein / German Name":
     with c1:
-        st.title("4️⃣ Point: The Hidden Vein")
+        st.title(current_task)
 
         st.markdown("---")
 
@@ -442,7 +442,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
 
 if current_task == "5 station / Final Checkpoint / German Name":
     with c1:
-        st.title("5️⃣ Final Checkpoint: The Journey Never Ends")
+        st.title(current_task)
 
         st.markdown("---")
 
