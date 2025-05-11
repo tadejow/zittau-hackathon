@@ -44,7 +44,7 @@ with c0:
                 options=("1 station / First Drop / Brücke über die Mandau",
                          "2 station / The Bleaching Fields / Mandau-Holzbrücke",
                          "3 station / The Serpent’s Bend / German Name",
-                         "4 point / The Hidden Vein / German Name",
+                         "4 station / The Hidden Vein / German Name",
                          "5 station / Final Checkpoint / German Name"
                          )
             )
@@ -111,7 +111,7 @@ with c0:
                     )
                 )
 
-            if current_task == "4 point / The Hidden Vein / German Name":
+            if current_task == "4 station / The Hidden Vein / German Name":
                 question_1 = st.selectbox(
                     label="Q1: What is the hidden part of the river mentioned here?",
                     options=(
@@ -381,7 +381,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
             """
         )
 
-if current_task == "4 point / The Hidden Vein / German Name":
+if current_task == "4 station / The Hidden Vein / German Name":
     with c1:
         st.title("4️⃣ Point: The Hidden Vein")
 
