@@ -243,3 +243,66 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
 
         st.markdown("**Are you ready for what comes next?**")
         st.markdown("👉 **Turn around. And go with the flow.**")
+
+if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
+    with c1:
+        st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            🕰️ **Time Capsule: Threads of Industry**
+
+            Long before **flood sirens** and **evacuation drills**,  
+            the **Mandau River** was a **partner**, not a threat.
+            """
+        )
+
+        st.markdown(
+            """
+            In the **18th and 19th centuries**, this very water **powered the local textile industry**.  
+            It **shaped towns**, **fed families**, and filled the air with the scent of **steam**, **dye**, and **raw wool**.
+            """
+        )
+
+        st.markdown(
+            """
+            🌞 **Right here**, on these fields,  
+            freshly woven fabrics were spread out to **bleach under the sun** —  
+            an age-old practice where **water** and **sunlight** did what **chemicals** do today.
+            """
+        )
+
+        st.markdown(
+            """
+            💧 The river served many roles:
+            - Washing **raw wool**
+            - Rinsing **dyed cloth**
+            - Powering **water mills**
+            - Cooling **steam machines**
+            - Transporting **goods downstream**
+            - ...and much more
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            But the **city's prosperity** didn’t last long.  
+
+            With **industrialization** came **pollution**.  
+            The river ran **blue**, **red**, **yellow**...  
+
+            The same water that once **gave life** to the industry  
+            began to **poison it**.
+            """
+        )
+
+        st.markdown(
+            """
+            🏭 **Factories closed.**  
+            🌾 The **bleaching fields** were abandoned.
+            """
+        )
