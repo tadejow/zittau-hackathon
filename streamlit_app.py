@@ -539,6 +539,8 @@ if current_task == "5 station / Final Checkpoint / German Name":
             """
         )
 
+        st.image("qr_code.png")
+
         st.markdown(
             """
             *To be continued...*
