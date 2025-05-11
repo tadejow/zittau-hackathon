@@ -161,7 +161,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         st.title(current_task)
 
-        st.image("./station_2_img.png")
+        st.image("./station_1_img.png")
 
         st.markdown(
             """
