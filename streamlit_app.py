@@ -49,124 +49,103 @@ with c0:
                     value=(0, 1000)
                 )
                 question_1 = st.selectbox(
-                    label="Q1: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q1: In how many countries does the Mandau river flow?",
+                    options=("One", "Two", "Three", "Four")
                 )
                 question_2 = st.selectbox(
-                    label="Q2: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q2: What happened in 1880 along the Mandau?",
+                    options=(
+                        "A large drought",
+                        "One of the worst floods in its history",
+                        "A dam was built",
+                        "The river changed course"
+                    )
                 )
-                question_3 = st.selectbox(
-                    label="Q3: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
-                question_4 = st.selectbox(
-                    label="Q4: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
-            if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
+
+            if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
                 question_1 = st.selectbox(
-                    label="Q1: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q1: What was one historical use of the Mandau river?",
+                    options=(
+                        "Source of drinking water only",
+                        "Gold mining",
+                        "Textile production",
+                        "Border patrol"
+                    )
                 )
                 question_2 = st.selectbox(
-                    label="Q2: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q2: What caused the decline of the bleaching fields?",
+                    options=(
+                        "Earthquake",
+                        "Lack of workforce",
+                        "Pollution from industrialization",
+                        "Too much rain"
+                    )
                 )
-                question_3 = st.selectbox(
-                    label="Q3: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
-                question_4 = st.selectbox(
-                    label="Q4: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
-            if current_task == "Why the river is shaped as it is":
+
+            if current_task == "3 station / The Serpent’s Bend / German Name":
                 question_1 = st.selectbox(
-                    label="Q1: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q1: Why did many cities form near rivers?",
+                    options=(
+                        "Rivers offered protection from enemies",
+                        "For their beauty",
+                        "For trade, farming, and fresh water",
+                        "Because they were dry"
+                    )
                 )
                 question_2 = st.selectbox(
-                    label="Q2: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q2: How did humans try to control rivers?",
+                    options=(
+                        "By building floating bridges",
+                        "By constructing weirs and straightening the path",
+                        "By freezing them",
+                        "By filling them with rocks"
+                    )
                 )
-                question_3 = st.selectbox(
-                    label="Q3: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+
+            if current_task == "4 point / The Hidden Vein / German Name":
+                question_1 = st.selectbox(
+                    label="Q1: What is the hidden part of the river mentioned here?",
+                    options=(
+                        "An underground tunnel",
+                        "Groundwater",
+                        "Lava",
+                        "Secret canal"
+                    )
                 )
-                question_4 = st.selectbox(
-                    label="Q4: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                question_2 = st.selectbox(
+                    label="Q2: What happened in the 1970s and 1980s in the Mandau region?",
+                    options=(
+                        "Flooding",
+                        "Chronic drought",
+                        "Earthquake",
+                        "Glacier melt"
+                    )
                 )
-            if current_task == "Breaking the flow of the river":
+
+            if current_task == "5 station / Final Checkpoint / German Name":
                 distance = st.slider(
                     label="How far is the source of water from the city?",
                     value=(0, 1000)
                 )
                 question_1 = st.selectbox(
-                    label="Q1: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q1: What is the key lesson from the Mandau’s story?",
+                    options=(
+                        "Rivers are dangerous",
+                        "Rivers are separate from people",
+                        "Rivers are simple systems",
+                        "Rivers are complex, living systems connected to many things"
+                    )
                 )
                 question_2 = st.selectbox(
-                    label="Q2: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
+                    label="Q2: What should we do at the end of the journey?",
+                    options=(
+                        "Forget about the river",
+                        "Stop asking questions",
+                        "Go with the flow",
+                        "Turn back"
+                    )
                 )
-                question_3 = st.selectbox(
-                    label="Q3: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
-                question_4 = st.selectbox(
-                    label="Q4: ",
-                    options=("A1",
-                             "A2",
-                             "A3",
-                             "A4")
-                )
+
             submit = st.form_submit_button("✅ Submit your input")
 
 if current_task == "1 station / First Drop / Brücke über die Mandau":
