@@ -225,7 +225,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
         st.markdown("**Are you ready for what comes next?**")
         st.markdown("👉 **Turn around. And go with the flow.**")
 
-if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
+if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
     with c1:
         st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
 
