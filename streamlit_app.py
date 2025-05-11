@@ -373,7 +373,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
             """
         )
 
-if current_task == "4 station / The Hidden Vein / German Name":
+if current_task == "4 point / The Hidden Vein / German Name":
     with c1:
         st.title("4️⃣ Point: The Hidden Vein")
 
