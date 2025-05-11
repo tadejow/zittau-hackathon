@@ -38,8 +38,10 @@ with c0:
                 label="💾 **-- Select the station --**",
                 options=("1 station / First Drop / Brücke über die Mandau",
                          "2 station /The Bleaching Fields / Mandau-Holzbrücke",
-                         "Why the river is shaped as it is?",
-                         "Breaking the flow of the river")
+                         "3 station / The Serpent’s Bend / German Name",
+                         "4 point / The Hidden Vein / German Name",
+                         "5 station / Final Checkpoint / German Name"
+                         )
             )
             if current_task == "1 station / First Drop / Brücke über die Mandau":
                 distance = st.slider(
@@ -304,5 +306,250 @@ if current_task == "2 station /The Bleaching Fields / Mandau-Holzbrücke":
             """
             🏭 **Factories closed.**  
             🌾 The **bleaching fields** were abandoned.
+            """
+        )
+
+if current_task == "3 station / The Serpent’s Bend / German Name":
+    with c1:
+        st.title("3️⃣ Station: The Serpent’s Bend")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            🕰️ **Time Capsule: The Flow That Changed Fates**
+
+            You’ve probably noticed that most cities were born beside rivers.
+
+            **Paris** rests on the *Seine*.  
+            **Cairo** flourishes along the *Nile*.  
+            And here, in this quiet corner of Europe, **Zittau** grew beside the *Mandau*.
+            """
+        )
+
+        st.markdown(
+            """
+            Why?  
+            Because rivers have always given us more than just water.
+
+            They were our **lifelines** —  
+            for drinking, farming, washing, and moving goods across great distances.
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            However, the **destiny of a city** was often shaped by the river’s path.
+
+            Some towns **flourished** when the river flowed steadily nearby —  
+            powering **grain mills**, irrigating **fields**.
+
+            Others faced **disaster** when the water shifted course,  
+            flooded farmland, or washed away bridges.
+            """
+        )
+
+        st.markdown(
+            """
+            So humanity did what it always does best:  
+            **Tried to control nature.**
+
+            - We built **weirs** and **walls**  
+            - We straightened winding curves  
+            - We turned rivers into engineered lines
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown("🧠 **Now it’s your turn.**")
+
+        st.markdown(
+            """
+            *(Interactive simulation here:)*  
+            **How can the flow change depending on the obstacles in the river?**
+            """
+        )
+
+        # Placeholder for visualization
+        st.image("serpent_simulation_placeholder.gif")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            You’ve learned a truth known for centuries:  
+            **You can’t stop the river.**  
+            But you can **guide** it.
+
+            The **Mandau bends**.  
+            And **history flows with it.**
+            """
+        )
+
+if current_task == "4 station / The Hidden Vein / German Name":
+    with c1:
+        st.title("4️⃣ Point: The Hidden Vein")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            What you see on the surface is only **half the story**.
+
+            The **Mandau** may shimmer in the sun,  
+            but beneath your feet, another river flows —  
+            **invisible**, **quiet**, and just as **vital**.
+            """
+        )
+
+        st.markdown(
+            """
+            This is the world of **groundwater**,  
+            and it’s more connected to the river than you think.
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            When it rains too much, the Mandau **swells** and **floods**.  
+            You’ve already seen how **destructive** that can be.
+            """
+        )
+
+        st.markdown("🧠 **But what happens when there’s no rain at all?**")
+
+        st.markdown(
+            """
+            When the **sky stays silent** and the **soil turns to dust**,  
+            rivers don’t rage — they **shrink**.  
+            They **vanish**.  
+
+            And everything **below the surface** begins to suffer.
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown("🕰️ **Time Capsule: Drought in the Mandau Region**")
+
+        st.markdown(
+            """
+            In the **1970s and 1980s**, on the **Czech side** of the Mandau,  
+            nature flipped the script.
+
+            Instead of **floods**, the region faced **chronic drought**.
+
+            Meanwhile, **factories and farms** were pulling massive amounts of water  
+            from underground for:
+            - 🧵 textile production  
+            - 🚿 washing  
+            - 🌾 irrigation
+
+            As a result:  
+            - 💧 **Wells ran dry**  
+            - 🌱 **Crop yields dropped**  
+            - 🚛 **Water had to be imported by truck**
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown("⚡ **Imagine yourself as Zeus...**")
+
+        st.markdown(
+            """
+            How might your actions change the **entire ecosystem** of the region?
+            """
+        )
+
+        st.markdown(
+            """
+            *(Interactive simulation here:)*  
+            **Set the amount of rainfall** and see the effects on  
+            **water level** and **underground conditions**.
+            """
+        )
+
+        # Placeholder for the visualization
+        st.image("drought_simulation_placeholder.gif")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            You’ve seen the **Mandau in flood**.  
+            Now, you’ve seen it in **drought**.
+
+            And you’ve learned this truth:
+            """
+        )
+
+        st.markdown(
+            """
+            💡 A **river** is not just water.  
+            It’s a **network** that runs both **above** and **below** the surface.
+            """
+        )
+
+if current_task == "5 station / Final Checkpoint / German Name":
+    with c1:
+        st.title("5️⃣ Final Checkpoint: The Journey Never Ends")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            🏁 **Final Checkpoint: The Journey Never Ends**
+
+            You’ve followed the **Mandau** from its first ripples to its **hidden depths**.  
+            You’ve faced **floods**, **droughts**, **industry**, and **innovation**.  
+
+            And you’ve discovered one powerful truth:
+            """
+        )
+
+        st.markdown(
+            """
+            🌍 **The complexity of even a single river is incredible.**
+
+            It’s a **living system** —  
+            connected to **people**, **soil**, **memory**, and **future generations**.
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            🌊 As one river flows into another,  
+            the story **never really ends**.
+            """
+        )
+
+        st.markdown(
+            """
+            Because there’s always something more to uncover…
+            - a **new hypothesis** to test  
+            - a **better solution** to try  
+            - a **smarter question** to ask
+            """
+        )
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            👉 So **go with the flow**.
+            """
+        )
+
+        st.markdown(
+            """
+            *To be continued...*
             """
         )
