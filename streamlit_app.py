@@ -389,7 +389,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
 
             # Display the GIF and caption with positioning relative to the placeholder
             placeholder.markdown(f"""<div style="{container_style}">
-                            <img src="data:image/gif;base64,{imgData}" width='2000' height='700'>
+                            <img src="data:image/gif;base64,{imgData}" width='1500' height='500'>
                             <p style="{caption_style}">{caption}</p>
                             </div>""", unsafe_allow_html=True)
 
