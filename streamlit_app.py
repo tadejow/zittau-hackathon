@@ -368,7 +368,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        file = open(r"./data/flow_animation_triple_circle", 'rb')
+        file = open(r"./data/flow_animation_triple_circle.gif", 'rb')
         contents = file.read()
         data_url = base64.b64encode(contents).decode('utf-8-sig')
         file.close()
