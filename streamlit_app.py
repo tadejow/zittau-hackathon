@@ -486,46 +486,44 @@ if current_task == "4 station / The Hidden Vein / German Name":
 if current_task == "5 station / Final Checkpoint / German Name":
     with c1:
         st.title("5️⃣ Final Checkpoint: The Journey Never Ends")
-
         st.markdown("---")
+        d0, d1 = st.columns([2, 2])
+        with d0:
+            st.markdown(
+                """
+                🏁 **Final Checkpoint: The Journey Never Ends**
+    
+                You’ve followed the **Mandau** from its first ripples to its **hidden depths**.  
+                You’ve faced **floods**, **droughts**, **industry**, and **innovation**.  
+    
+                And you’ve discovered one powerful truth:
+                """
+            )
+            st.markdown(
+                """
+                🌍 **The complexity of even a single river is incredible.**
+    
+                It’s a **living system** —  
+                connected to **people**, **soil**, **memory**, and **future generations**.
+                """
+            )
 
-        st.markdown(
-            """
-            🏁 **Final Checkpoint: The Journey Never Ends**
+        with d1:
+            st.markdown(
+                """
+                🌊 As one river flows into another,  
+                the story **never really ends**.
+                """
+            )
 
-            You’ve followed the **Mandau** from its first ripples to its **hidden depths**.  
-            You’ve faced **floods**, **droughts**, **industry**, and **innovation**.  
-
-            And you’ve discovered one powerful truth:
-            """
-        )
-
-        st.markdown(
-            """
-            🌍 **The complexity of even a single river is incredible.**
-
-            It’s a **living system** —  
-            connected to **people**, **soil**, **memory**, and **future generations**.
-            """
-        )
-
-        st.markdown("---")
-
-        st.markdown(
-            """
-            🌊 As one river flows into another,  
-            the story **never really ends**.
-            """
-        )
-
-        st.markdown(
-            """
-            Because there’s always something more to uncover…
-            - a **new hypothesis** to test  
-            - a **better solution** to try  
-            - a **smarter question** to ask
-            """
-        )
+            st.markdown(
+                """
+                Because there’s always something more to uncover…
+                - a **new hypothesis** to test  
+                - a **better solution** to try  
+                - a **smarter question** to ask
+                """
+            )
 
         st.markdown("---")
 
