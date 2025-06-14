@@ -389,70 +389,67 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
 if current_task == "4 station / The Hidden Vein / German Name":
     with c1:
         st.title("4️⃣ Point: The Hidden Vein")
-
         st.markdown("---")
 
-        st.markdown(
-            """
-            What you see on the surface is only **half the story**.
+        d0, d1, d2 = st.columns([1.33, 1.33, 1.33])
+        with d0:
+            st.markdown(
+                """
+                What you see on the surface is only **half the story**.
+    
+                The **Mandau** may shimmer in the sun,  
+                but beneath your feet, another river flows —  
+                **invisible**, **quiet**, and just as **vital**.
+                """
+            )
 
-            The **Mandau** may shimmer in the sun,  
-            but beneath your feet, another river flows —  
-            **invisible**, **quiet**, and just as **vital**.
-            """
-        )
+            st.markdown(
+                """
+                This is the world of **groundwater**,  
+                and it’s more connected to the river than you think.
+                """
+            )
+        with d1:
+            st.markdown(
+                """
+                When it rains too much, the Mandau **swells** and **floods**.  
+                You’ve already seen how **destructive** that can be.
+                """
+            )
 
-        st.markdown(
-            """
-            This is the world of **groundwater**,  
-            and it’s more connected to the river than you think.
-            """
-        )
+            st.markdown("🧠 **But what happens when there’s no rain at all?**")
 
-        st.markdown("---")
+            st.markdown(
+                """
+                When the **sky stays silent** and the **soil turns to dust**,  
+                rivers don’t rage — they **shrink**.  
+                They **vanish**.  
+    
+                And everything **below the surface** begins to suffer.
+                """
+            )
+        with d2:
+            st.markdown("🕰️ **Time Capsule: Drought in the Mandau Region**")
 
-        st.markdown(
-            """
-            When it rains too much, the Mandau **swells** and **floods**.  
-            You’ve already seen how **destructive** that can be.
-            """
-        )
-
-        st.markdown("🧠 **But what happens when there’s no rain at all?**")
-
-        st.markdown(
-            """
-            When the **sky stays silent** and the **soil turns to dust**,  
-            rivers don’t rage — they **shrink**.  
-            They **vanish**.  
-
-            And everything **below the surface** begins to suffer.
-            """
-        )
-
-        st.markdown("---")
-
-        st.markdown("🕰️ **Time Capsule: Drought in the Mandau Region**")
-
-        st.markdown(
-            """
-            In the **1970s and 1980s**, on the **Czech side** of the Mandau,  
-            nature flipped the script.
-
-            Instead of **floods**, the region faced **chronic drought**.
-
-            Meanwhile, **factories and farms** were pulling massive amounts of water  
-            from underground for:
-            - 🧵 textile production  
-            - 🚿 washing  
-            - 🌾 irrigation
-
-            As a result:  
-            - 💧 **Wells ran dry**  
-            - 🌱 **Crop yields dropped**  
-            - 🚛 **Water had to be imported by truck**
-            """
-        )
+            st.markdown(
+                """
+                In the **1970s and 1980s**, on the **Czech side** of the Mandau,  
+                nature flipped the script.
+    
+                Instead of **floods**, the region faced **chronic drought**.
+    
+                Meanwhile, **factories and farms** were pulling massive amounts of water  
+                from underground for:
+                - 🧵 textile production  
+                - 🚿 washing  
+                - 🌾 irrigation
+    
+                As a result:  
+                - 💧 **Wells ran dry**  
+                - 🌱 **Crop yields dropped**  
+                - 🚛 **Water had to be imported by truck**
+                """
+            )
 
         st.markdown("---")
 
@@ -466,14 +463,14 @@ if current_task == "4 station / The Hidden Vein / German Name":
 
         st.markdown(
             """  
-            **Set the amount of rainfall** and see the effects on  
-            **water level** and **underground conditions**.
+            **Set the amount of rainfall** and see the effects on **water level** and **underground conditions**.
             """
         )
-
-        # Placeholder for the visualization
-        st.image("./data/vegetation_animation_u.gif")
-        st.image("./data/vegetation_animation_p.gif")
+        e1, e2 = st.columns([0.66, 0.66])
+        with e1:
+            st.image("./data/vegetation_animation_u.gif")
+        with e2:
+            st.image("./data/vegetation_animation_p.gif")
 
         st.markdown("---")
 
@@ -481,11 +478,9 @@ if current_task == "4 station / The Hidden Vein / German Name":
             """
             You’ve seen the **Mandau in flood**.  
             Now, you’ve seen it in **drought**.
-
             And you’ve learned this truth:
             """
         )
-
         st.markdown(
             """
             💡 A **river** is not just water.  
