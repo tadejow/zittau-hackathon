@@ -161,7 +161,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         st.title(current_task)
 
-        st.image("./station_1_img.png")
+        st.image("./data/station_1_img.png")
 
         st.markdown(
             """
@@ -211,7 +211,7 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
             """
         )
 
-        st.image(f'burgers_simulation_with_source_{distance}.gif')
+        st.image(f'./data/burgers_simulation_with_source_{distance}.gif')
 
         st.markdown(
             """
@@ -242,7 +242,7 @@ if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
         st.title("2️⃣ Station: The Bleaching Fields / Mandau-Holzbrücke")
         st.markdown("---")
 
-        st.image("./station_2_img.png")
+        st.image("./data/station_2_img.png")
 
         st.markdown(
             """
@@ -366,7 +366,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image(f"river_flow_animation_{obstacle}.gif")
+        st.image(f"data/river_flow_animation_{obstacle}.gif")
 
         st.markdown("---")
 
@@ -467,7 +467,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
         )
 
         # Placeholder for the visualization
-        st.image("interactgive_heatmap.png")
+        st.image("data/interactgive_heatmap.png")
 
         st.markdown("---")
 
@@ -539,7 +539,7 @@ if current_task == "5 station / Final Checkpoint / German Name":
             """
         )
 
-        st.image("qr_code.png")
+        st.image("data/qr_code.png")
 
         st.markdown(
             """
