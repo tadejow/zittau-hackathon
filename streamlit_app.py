@@ -469,7 +469,8 @@ if current_task == "4 station / The Hidden Vein / German Name":
         )
 
         # Placeholder for the visualization
-        st.image("data/interactgive_heatmap.png")
+        st.image("./data/vegetation_animation_u.gif")
+        st.image("./data/vegetation_animation_p.gif")
 
         st.markdown("---")
 
