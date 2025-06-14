@@ -327,56 +327,52 @@ if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
 
 if current_task == "3 station / The Serpent’s Bend / German Name":
     with c1:
+        d0, d1 = st.columns([2, 2])
         st.title("3️⃣ Station: The Serpent’s Bend")
-
         st.markdown("---")
+        with d0:
+            st.markdown(
+                """
+                🕰️ **Time Capsule: The Flow That Changed Fates**
+    
+                You’ve probably noticed that most cities were born beside rivers.
+    
+                **Paris** rests on the *Seine*.  
+                **Cairo** flourishes along the *Nile*.  
+                And here, in this quiet corner of Europe, **Zittau** grew beside the *Mandau*.
+                """
+            )
+            st.markdown(
+                """
+                Why?  
+                Because rivers have always given us more than just water.
 
-        st.markdown(
-            """
-            🕰️ **Time Capsule: The Flow That Changed Fates**
-
-            You’ve probably noticed that most cities were born beside rivers.
-
-            **Paris** rests on the *Seine*.  
-            **Cairo** flourishes along the *Nile*.  
-            And here, in this quiet corner of Europe, **Zittau** grew beside the *Mandau*.
-            """
-        )
-
-        st.markdown(
-            """
-            Why?  
-            Because rivers have always given us more than just water.
-
-            They were our **lifelines** —  
-            for drinking, farming, washing, and moving goods across great distances.
-            """
-        )
-
-        st.markdown("---")
-
-        st.markdown(
-            """
-            However, the **destiny of a city** was often shaped by the river’s path.
-
-            Some towns **flourished** when the river flowed steadily nearby —  
-            powering **grain mills**, irrigating **fields**.
-
-            Others faced **disaster** when the water shifted course,  
-            flooded farmland, or washed away bridges.
-            """
-        )
-
-        st.markdown(
-            """
-            So humanity did what it always does best:  
-            **Tried to control nature.**
-
-            - We built **weirs** and **walls**  
-            - We straightened winding curves  
-            - We turned rivers into engineered lines
-            """
-        )
+                They were our **lifelines** —  
+                for drinking, farming, washing, and moving goods across great distances.
+                """
+            )
+        with d1:
+            st.markdown(
+                """
+                However, the **destiny of a city** was often shaped by the river’s path.
+    
+                Some towns **flourished** when the river flowed steadily nearby —  
+                powering **grain mills**, irrigating **fields**.
+    
+                Others faced **disaster** when the water shifted course,  
+                flooded farmland, or washed away bridges.
+                """
+            )
+            st.markdown(
+                """
+                So humanity did what it always does best:  
+                **Tried to control nature.**
+    
+                - We built **weirs** and **walls**  
+                - We straightened winding curves  
+                - We turned rivers into engineered lines
+                """
+            )
 
         st.markdown("---")
 
