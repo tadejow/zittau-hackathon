@@ -1,3 +1,5 @@
+import base64
+
 import streamlit as st
 import pandas as pd
 
@@ -366,7 +368,13 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image(f"data/flow_animation_triple_{obstacle}.gif")
+        path = f"data/flow_animation_triple_{obstacle}.gif"
+        file = open(path, 'rb')
+        contents = file.read()
+        data_url = base64.b64encode(contents).decode('utf-8-sig')
+        file.close()
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}>', unsafe_allow_html=True)
+        # st.image(f"data/flow_animation_triple_{obstacle}.gif")
 
         st.markdown("---")
 
