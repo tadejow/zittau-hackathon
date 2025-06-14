@@ -365,7 +365,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image(f"./pipeline/flow_animation_triple_{obstacle}.gif")
+        st.image(f"./data/river_flow_animation_{obstacle}.gif")
 
         st.markdown("---")
 
