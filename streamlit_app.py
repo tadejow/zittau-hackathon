@@ -368,12 +368,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        file = open(r"./data/flow_animation_triple_circle.gif", 'rb')
-        contents = file.read()
-        data_url = base64.b64encode(contents).decode('utf-8-sig')
-        file.close()
-        st.markdown(f'<img src="data:image/gif;base64,{data_url}>', unsafe_allow_html=True)
-        # st.image(f"data/flow_animation_triple_{obstacle}.gif")
+        st.image(f"./data/flow_animation_triple_{obstacle}.gif")
 
         st.markdown("---")
 
