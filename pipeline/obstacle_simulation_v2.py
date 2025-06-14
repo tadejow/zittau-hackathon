@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # --- Simulation Parameters ---
-K = 50  # Grid size in X axis (width)
-N = 50  # Grid size in Y axis (height)
+K = 100  # Grid size in X axis (width)
+N = 100  # Grid size in Y axis (height)
 L_x = 4.0  # Domain length in X
 L_y = 10.0  # Domain length in Y
 dx = L_x / K  # Grid spacing in X
 dy = L_y / N  # Grid spacing in Y
-dt = 0.005  # Time step (reduced for stability)
-T = 1.0  # Total simulation time
-nu = 0.01  # Viscosity
+dt = 0.01  # Time step (reduced for stability)
+T = 5.0  # Total simulation time
+nu = 0.05  # Viscosity
 
 
 # --- Helper function to create obstacles ---
@@ -128,6 +128,8 @@ for t_step in range(int(T / dt)):
         # Neumann BCs on left/right walls
         u_new[:, 0], u_new[:, -1] = u_new[:, 1], u_new[:, -2]
         v_new[:, 0], v_new[:, -1] = v_new[:, 1], v_new[:, -2]
+        # Dirichlet BCs on bottom wall
+        u_new[-1, :], v_new[-1, :] = np.zeros(K), np.ones(K)
 
         # Obstacle no-slip condition
         u_new[mask], v_new[mask] = 0, 0
