@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # --- Simulation Parameters ---
-K = 100  # Grid size in X axis (width)
-N = 100  # Grid size in Y axis (height)
+K = 50  # Grid size in X axis (width)
+N = 50  # Grid size in Y axis (height)
 L_x = 1.0  # Domain length in X
 L_y = 2.0  # Domain length in Y
 dx = L_x / K  # Grid spacing in X
 dy = L_y / N  # Grid spacing in Y
-dt = 0.0001  # Time step (reduced for stability)
+dt = 0.001  # Time step (reduced for stability)
 T = 1.0  # Total simulation time
 nu = 0.01  # Viscosity
 

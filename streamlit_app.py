@@ -1,7 +1,4 @@
-import base64
-
 import streamlit as st
-import pandas as pd
 
 
 def _max_width_():
@@ -92,7 +89,7 @@ with c0:
             if current_task == "3 station / The Serpent’s Bend / German Name":
                 obstacle = st.selectbox(
                     "Select the obstacle type",
-                    options=("circle", "rectangle", "square", "triangle")
+                    options=("rectangle", "square", "triangle")
                 )
                 question_1 = st.selectbox(
                     label="Q1: Why did many cities form near rivers?",
@@ -368,7 +365,7 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
         )
 
         # Placeholder for visualization
-        st.image(f"./data/river_flow_animation_{obstacle}.gif")
+        st.image(f"./data/flow_animation_triple_{obstacle}.gif")
 
         st.markdown("---")
 
