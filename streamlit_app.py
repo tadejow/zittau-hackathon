@@ -90,7 +90,7 @@ with c0:
             if current_task == "3 station / The Serpent’s Bend / German Name":
                 obstacle = st.selectbox(
                     "Select the obstacle type",
-                    options=("rectangle", "square", "triangle")
+                    options=("circle", "rectangle", "square", "triangle")
                 )
                 question_1 = st.selectbox(
                     label="Q1: Why did many cities form near rivers?",
