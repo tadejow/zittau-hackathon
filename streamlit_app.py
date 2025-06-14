@@ -90,6 +90,7 @@ with c0:
                         "The river changed course"
                     )
                 )
+                st.image("./data/station_1_img.png")
 
             if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
                 question_1 = st.selectbox(
@@ -184,59 +185,54 @@ with c0:
 if current_task == "1 station / First Drop / Brücke über die Mandau":
     with c1:
         st.title(current_task)
+        st.markdown('---')
 
-        st.image("./data/station_1_img.png")
+        d0, d1, d2 = st.columns([1.33, 1.33, 1.33])
+        with d0:
+            st.markdown(
+                """*You are now standing on the **Brücke über die Mandau**, looking in the direction of **Rumburk**, 
+                where our story begins...* Over there, the **Mandau** winds its way through **three countries**: 
+                the **Czech Republic**, **Germany**, and **Poland**. A peaceful stream at first glance...
+                but don’t be fooled. This river has seen things. **Big things.**
+                """
+            )
+        with d1:
+            st.markdown(
+                """
+                💥 **Time Capsule: 1880**  
+                The sky turned dark. The rains didn’t stop.  
+                Within days, over **300 houses were destroyed**.  
+                One of the worst floods in Mandau’s history.  
+    
+                *Did the citizens see it coming?*  
+                Exactly. They didn’t.
+                """
+            )
+            st.markdown(
+                """
+                After 150 years, we've learned our lesson.  
+                We've built **automated alarms**, installed **emergency sirens**, and created **mobile apps** to warn us when nature gets angry.
+                """
+            )
+        with d2:
+            st.markdown(
+                """
+                🧠 **But let's try to guess** — how much time do we actually have to prepare for a flood?
+                """
+            )
 
-        st.markdown(
-            """*You are now standing on the **Brücke über die Mandau**, looking in the direction of **Rumburk**, 
-            where our story begins...*
-
-            Over there, the **Mandau** winds its way through **three countries**: the **Czech Republic**, **Germany**, and **Poland**.  
-            A peaceful stream at first glance… but don’t be fooled.  
-            This river has seen things. **Big things.**
-            """
-        )
+            st.markdown(
+                """
+                🌧️ *Imagine this:*  
+                Heavy rain just started falling… **20 km upstream** from where you stand.  
+                The water’s rising.  
+                The clock is ticking.  
+                """
+            )
 
         st.markdown("---")
-
-        st.markdown(
-            """
-            💥 **Time Capsule: 1880**  
-            The sky turned dark. The rains didn’t stop.  
-            Within days, over **300 houses were destroyed**.  
-            One of the worst floods in Mandau’s history.  
-
-            *Did the citizens see it coming?*  
-            Exactly. They didn’t.
-            """
-        )
-
-        st.markdown("---")
-
-        st.markdown(
-            """
-            After 150 years, we've learned our lesson.  
-            We've built **automated alarms**, installed **emergency sirens**, and created **mobile apps** to warn us when nature gets angry.
-            """
-        )
-
-        st.markdown(
-            """
-            🧠 **But let's try to guess** — how much time do we actually have to prepare for a flood?
-            """
-        )
-
-        st.markdown(
-            """
-            🌧️ *Imagine this:*  
-            Heavy rain just started falling… **20 km upstream** from where you stand.  
-            The water’s rising.  
-            The clock is ticking.  
-            """
-        )
-
         st.image(f'./data/burgers_simulation_with_source_{distance}.gif')
-
+        st.markdown("---")
         st.markdown(
             """
             You've just witnessed how quickly disaster can strike.  
@@ -248,7 +244,6 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
             💡 *But will you use them in time?*
             """
         )
-
         st.markdown(
             """
             This was just the beginning.  
@@ -256,7 +251,6 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
             The **river remembers**.  
             """
         )
-
         st.markdown("**Are you ready for what comes next?**")
         st.markdown("👉 **Turn around. And go with the flow.**")
 
