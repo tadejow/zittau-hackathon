@@ -409,16 +409,13 @@ if current_task == "4 station / The Hidden Vein / German Name":
                 and it’s more connected to the river than you think.
                 """
             )
-        with d1:
             st.markdown(
                 """
                 When it rains too much, the Mandau **swells** and **floods**.  
                 You’ve already seen how **destructive** that can be.
                 """
             )
-
             st.markdown("🧠 **But what happens when there’s no rain at all?**")
-
             st.markdown(
                 """
                 When the **sky stays silent** and the **soil turns to dust**,  
@@ -451,21 +448,19 @@ if current_task == "4 station / The Hidden Vein / German Name":
                 """
             )
 
-        st.markdown("---")
+            st.markdown("⚡ **Imagine yourself as Zeus...**")
 
-        st.markdown("⚡ **Imagine yourself as Zeus...**")
+            st.markdown(
+                """
+                How might your actions change the **entire ecosystem** of the region?
+                """
+            )
 
-        st.markdown(
-            """
-            How might your actions change the **entire ecosystem** of the region?
-            """
-        )
-
-        st.markdown(
-            """  
-            **Set the amount of rainfall** and see the effects on **water level** and **underground conditions**.
-            """
-        )
+            st.markdown(
+                """  
+                **Set the amount of rainfall** and see the effects on **water level** and **underground conditions**.
+                """
+            )
         e1, e2 = st.columns([0.66, 0.66])
         with e1:
             st.image("./data/vegetation_animation_u.gif")
