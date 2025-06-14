@@ -391,7 +391,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
         st.title("4️⃣ Point: The Hidden Vein")
         st.markdown("---")
 
-        d0, d1, d2 = st.columns([1.33, 1.33, 1.33])
+        d0, d1 = st.columns([2, 2])
         with d0:
             st.markdown(
                 """
@@ -425,7 +425,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
                 And everything **below the surface** begins to suffer.
                 """
             )
-        with d2:
+        with d1:
             st.markdown("🕰️ **Time Capsule: Drought in the Mandau Region**")
 
             st.markdown(
@@ -461,7 +461,7 @@ if current_task == "4 station / The Hidden Vein / German Name":
                 **Set the amount of rainfall** and see the effects on **water level** and **underground conditions**.
                 """
             )
-        e1, e2 = st.columns([0.66, 0.66])
+        e1, e2 = st.columns([1, 1])
         with e1:
             st.image("./data/vegetation_animation_u.gif")
         with e2:
