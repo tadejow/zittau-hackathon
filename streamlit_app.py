@@ -327,9 +327,10 @@ if current_task == "2 station / The Bleaching Fields / Mandau-Holzbrücke":
 
 if current_task == "3 station / The Serpent’s Bend / German Name":
     with c1:
-        d0, d1 = st.columns([2, 2])
         st.title("3️⃣ Station: The Serpent’s Bend")
         st.markdown("---")
+
+        d0, d1 = st.columns([2, 2])
         with d0:
             st.markdown(
                 """
