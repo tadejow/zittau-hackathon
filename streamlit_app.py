@@ -2,6 +2,30 @@ import streamlit as st
 import base64
 
 
+def display_gif(placeholder, localImagePath, caption):
+    imgFile = open(localImagePath, "rb")
+    contents = imgFile.read()
+    imgData = base64.b64encode(contents).decode("utf-8")
+    imgFile.close()
+
+    # Define CSS styles for the container and caption
+    container_style = (
+        "position: relative;"  # Enable relative positioning
+        "display: inline-block;"  # Display as inline-block to align with placeholder
+    )
+
+    caption_style = (
+        "font-size: 14px;"  # Adjust the font size as needed
+        "color: #888888;"  # Dimmer color
+        "text-align: center;"  # Center the caption text
+    )
+
+    # Display the GIF and caption with positioning relative to the placeholder
+    placeholder.markdown(f"""<div style="{container_style}">
+                    <img src="data:image/gif;base64,{imgData}" width='1200' height='400'>
+                    <p style="{caption_style}">{caption}</p>
+                    </div>""", unsafe_allow_html=True)
+
 def _max_width_():
     max_width_str = f"max-width: 1400px;"
     st.markdown(
@@ -164,8 +188,8 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
         st.image("./data/station_1_img.png")
 
         st.markdown(
-            """
-            *You are now standing on the **Brücke über die Mandau**, looking in the direction of **Rumburk**, where our story begins...*
+            """*You are now standing on the **Brücke über die Mandau**, looking in the direction of **Rumburk**, 
+            where our story begins...*
 
             Over there, the **Mandau** winds its way through **three countries**: the **Czech Republic**, **Germany**, and **Poland**.  
             A peaceful stream at first glance… but don’t be fooled.  
@@ -358,45 +382,10 @@ if current_task == "3 station / The Serpent’s Bend / German Name":
 
         st.markdown("🧠 **Now it’s your turn.**")
 
-        st.markdown(
-            """
-            *(Interactive simulation here:)*  
-            **How can the flow change depending on the obstacles in the river?**
-            """
-        )
-
-        # Placeholder for visualization
-        st.image(f"./data/river_flow_animation_{obstacle}.gif")
-
-        # st.image(f"./data/flow_animation_triple_{obstacle}.gif")
-        def displayLocalGIF2(placeholder, localImagePath, caption):
-            imgFile = open(localImagePath, "rb")
-            contents = imgFile.read()
-            imgData = base64.b64encode(contents).decode("utf-8")
-            imgFile.close()
-
-            # Define CSS styles for the container and caption
-            container_style = (
-                "position: relative;"  # Enable relative positioning
-                "display: inline-block;"  # Display as inline-block to align with placeholder
-            )
-
-            caption_style = (
-                "font-size: 14px;"  # Adjust the font size as needed
-                "color: #888888;"  # Dimmer color
-                "text-align: center;"  # Center the caption text
-            )
-
-            # Display the GIF and caption with positioning relative to the placeholder
-            placeholder.markdown(f"""<div style="{container_style}">
-                            <img src="data:image/gif;base64,{imgData}" width='1200' height='400'>
-                            <p style="{caption_style}">{caption}</p>
-                            </div>""", unsafe_allow_html=True)
-
-
         image_placeholder1 = st.empty()
         imagePath1 = f"./data/flow_animation_triple_{obstacle}.gif"
-        displayLocalGIF2(image_placeholder1, imagePath1, "Local Image")
+        display_gif(image_placeholder1, imagePath1,
+                    "How can the flow change depending on the obstacles in the river?")
 
         st.markdown("---")
 
