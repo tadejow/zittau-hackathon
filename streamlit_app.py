@@ -233,6 +233,18 @@ if current_task == "1 station / First Drop / Brücke über die Mandau":
         st.markdown("---")
         st.image(f'./data/burgers_simulation_with_source_{distance}.gif')
         st.markdown("---")
+        e1, e2 = st.columns([2, 2])
+        with e1:
+            image_placeholder = st.empty()
+            imagePath = f"./data/burgers2d_with_levees_1.0.gif"
+            display_gif(image_placeholder, imagePath,
+                        "What if the river flow increases by 1.0 [m/s]?")
+        with e2:
+            image_placeholder = st.empty()
+            imagePath = f"./data/burgers2d_with_levees_1.5.gif"
+            display_gif(image_placeholder, imagePath,
+                        "What if the river flows increases by 1.5 [m/s]?")
+        st.markdown("---")
         st.markdown(
             """
             You've just witnessed how quickly disaster can strike.  

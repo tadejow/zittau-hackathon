@@ -8,10 +8,10 @@ def simulate_2d_burgers_with_city_surface_plot(
         city_width_km=15.0,
         city_depth_km=8.0,
         domain_width_km=15.0,
-        dx=0.5,  # km
-        dy=0.5,  # km
+        dx=0.5,   # km
+        dy=0.5,   # km
         dt=0.04,  # hr
-        nu=1.5,  # viscosity
+        nu=1.2,   # viscosity
         max_source_amplitude=1.5,
         source_frequency=0.5,
         simulation_time_h=24.0 * 60,
